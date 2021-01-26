@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="5dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cv_answerfragment_card_proimage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/cat"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/tv_answerfragment_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asker Name"
+                android:layout_marginHorizontal="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_answerfragment_card_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:text="Category"
+
+             />
+
+        <TextView
+            android:id="@+id/tv_answerfragment_card_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:text="Question"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5.2"
+            android:gravity="center_vertical">
+
+
+            <Button
+                android:id="@+id/bt_answerfragment_card_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer" />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
